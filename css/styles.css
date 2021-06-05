@@ -8,6 +8,7 @@
   --footer-phone-mail: rgba(255, 255, 255, 0.6);
   --color-studio: #0000;
   --card-content-border:  #EEEEEE;
+  --company-social-color: #AFB1B8;
       }       
   
  .html {
@@ -416,3 +417,32 @@
 
  }
  
+.social{
+   fill: var(--company-social-color);
+   /* stroke:  blue; */
+}
+
+.connect{
+     fill:  var(--main-text-color);
+     /* stroke: blue; */
+}
+
+.social:hover,
+.social:focus{
+     fill: var(--white-color);
+    background-color:var(--color-button-logo) ;
+
+}
+
+.connect:hover,
+.connect:focus{
+     Fill: var(--color-button-logo) ;      
+}
+.company{
+     fill: var(--company-social-color);
+}
+
+.company:hover,
+.company:focus{
+     fill: var(--color-button-logo);
+}
