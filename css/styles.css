@@ -64,10 +64,17 @@
  /* навигация */
    .sait-nav {  
       display: flex;
-      align-items: center; 
-      justify-content: space-between;          
+       align-items: center; 
+      /* justify-content: space-between;            */
+             
  }
 
+ .sait-nav:not(:last-child){
+      padding-right: 50px;
+ }
+ 
+ 
+ 
  header{
      border-bottom: 1px solid #ECECEC;
  }
@@ -83,12 +90,14 @@
 
  .sait-contacts{
        display: flex; 
-      justify-content: space-between; 
-      width: 307px;
-      margin-left: 331px;
+      justify-content: space-between;      
+      width: 333px;
+      margin-left: 305px;
       padding-top: 32px;
       padding-bottom: 32px;
  }
+ .connect .mail{ 
+      margin-right: 30px;  }  
 
  .sait-contacts .mail{
       font-family: Roboto;
@@ -97,7 +106,9 @@
       font-size: 14px;
       line-height: 1.143;
       letter-spacing: 0.02em; 
-      color: var(--main-text-color);    
+      color: var(--main-text-color);
+      
+       
  }
 
  .sait-contacts .phone{
@@ -127,7 +138,8 @@
       line-height: 1.192;
       color: var(--main-color-headers);
       text-decoration: none;
-      color: var(color-studio);      
+      color: var(color-studio); 
+      width: 145px;     
  }
 
  .logo-web{
@@ -138,8 +150,15 @@
       .hero{
       background-color: var(--hero-footer-background);
       padding-bottom: 200px;
-      padding-top: 200px;   
- }          
+      padding-top: 200px;        
+ } 
+ 
+ .hero {
+      background-image: url(../images/hero.jpg);
+      background-position: center;
+      background-size: cover;
+      
+ }
          
  .hero .title{  
       font-weight: 900;
@@ -201,6 +220,7 @@
       text-transform: uppercase;
       color: var(--main-color-headers);
       margin-bottom: 10px;
+      text-align: center;
  }
 
  .feature-text{
@@ -208,7 +228,8 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 1.714; 
-      letter-spacing: 0.03em;   
+      letter-spacing: 0.03em; 
+      text-align: justify; 
  }
 
       /* Чем занимаемся */
@@ -227,12 +248,13 @@
   /* Команда */
  
  .team{
+     
       background: var(--team-filter-btn-bg);
       padding-top: 94px;
        padding-bottom: 94px; 
  }
 
- .list-item{
+ .list-item {
       display: flex;
       justify-content: space-between;
  }
@@ -285,6 +307,7 @@
  }
 
  .footer .conteiner{
+      
       padding-top: 60px;
       padding-bottom: 60px;
       
@@ -419,18 +442,27 @@
  
 .social{
    fill: var(--company-social-color);
-   /* stroke:  blue; */
+   width: 20px;
+   height: 20px;
+   
 }
 
-.connect{
+ .icon-mail{
      fill:  var(--main-text-color);
-     /* stroke: blue; */
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    
+    
 }
 
 .social:hover,
 .social:focus{
      fill: var(--white-color);
     background-color:var(--color-button-logo) ;
+    border-radius: 50%;
+    
 
 }
 
@@ -445,4 +477,12 @@
 .company:hover,
 .company:focus{
      fill: var(--color-button-logo);
+}
+ .icon-phone {
+     width: 10px;
+     height: 16px;  
+
+     fill:  var(--main-text-color);
+     margin-right: 10px;
+    
 }
