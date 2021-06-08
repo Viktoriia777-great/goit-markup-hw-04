@@ -129,6 +129,8 @@
  .link:focus{
      color: var(--color-button-logo);
  } 
+ 
+ 
 
  /* Logo */ 
  .logo{
@@ -148,17 +150,32 @@
 
  /* Hero section class="hero"*/
       .hero{
-      background-color: var(--hero-footer-background);
+      
       padding-bottom: 200px;
       padding-top: 200px;        
  } 
  
  .hero {
-      background-image: url(../images/hero.jpg);
+
+      /* background-image: url(../images/hero.jpg); */
       background-position: center;
-      background-size: cover;
-      
+      background-size: cover;    
+     
+
  }
+ .hero{
+      max-width: 1600px;
+      max-height: 600px;
+      margin-left: auto;
+      margin-right: auto;           
+      background-image: linear-gradient(to left rgba(0, 0, 0, 0,25)),
+      
+       url(../images/hero.jpg); 
+      /* background-color: var(--hero-footer-background); */
+      
+
+ }
+ 
          
  .hero .title{  
       font-weight: 900;
@@ -297,6 +314,26 @@
       text-align: center;     
       margin-top: 10px;    
  }
+ .icons-list{
+      margin: 0 auto;
+      margin-top: 16px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+     
+ }
+ .icons-list li{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      width: 44px;
+      height: 44px;   
+      border-radius: 50%;
+ }
+ 
+      
 
       /* Контакты footer class="footer"*/
        
@@ -448,7 +485,7 @@
 }
 
  .icon-mail{
-     fill:  var(--main-text-color);
+  fill:  var(--main-text-color);
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -457,14 +494,12 @@
     
 }
 
-.social:hover,
-.social:focus{
-     fill: var(--white-color);
-    background-color:var(--color-button-logo) ;
-    border-radius: 50%;
-    
-
+ .icons-list li:hover,
+ .icons-list li:focus{
+    fill: var(--white-color);
+    background-color:var(--color-button-logo) ;           
 }
+
 
 .connect:hover,
 .connect:focus{
@@ -481,7 +516,6 @@
  .icon-phone {
      width: 10px;
      height: 16px;  
-
      fill:  var(--main-text-color);
      margin-right: 10px;
     
