@@ -4,7 +4,7 @@
   --white-color: #FFFFFF;
   --team-filter-btn-bg: #F5F4FA; 
   --color-button-logo: #2196F3;
-  --hero-footer-background: #2F303A; 
+  --hero-footer-background: #2f303a; 
   --footer-phone-mail: rgba(255, 255, 255, 0.6);
   --color-studio: #0000;
   --card-content-border:  #EEEEEE;
@@ -69,10 +69,10 @@
              
  }
 
- .sait-nav:not(:last-child){
+ /* .sait-nav:not(:last-child){
       padding-right: 50px;
  }
- 
+  */
  
  
  header{
@@ -87,18 +87,22 @@
       padding-bottom: 32px;
       margin-left: 93px;
  }
+ .sait-link li:not(:last-child){
+      margin-right: 50px;
+ }
 
  .sait-contacts{
-       display: flex; 
-      justify-content: space-between;      
-      width: 333px;
-      margin-left: 305px;
+      display: flex; 
+      align-items: center;
+      justify-content: space-between;       
+      width: 333px;  
+       margin-left: 305px; 
       padding-top: 32px;
       padding-bottom: 32px;
  }
- .connect .mail{ 
-      margin-right: 30px;  }  
-
+  .sait-contacts li:not(:last-child){
+      margin-right: 22px; } 
+ 
  .sait-contacts .mail{
       font-family: Roboto;
       font-style: normal;
@@ -106,9 +110,7 @@
       font-size: 14px;
       line-height: 1.143;
       letter-spacing: 0.02em; 
-      color: var(--main-text-color);
-      
-       
+      color: var(--main-text-color);            
  }
 
  .sait-contacts .phone{
@@ -124,6 +126,9 @@
  .active {
       color: var(--color-button-logo);
  }
+ 
+ 
+ 
 
  .link:hover, 
  .link:focus{
@@ -149,33 +154,22 @@
  } 
 
  /* Hero section class="hero"*/
-      .hero{
       
+  .hero{
+      /* background-position: center;
+      background-size: cover;     */
       padding-bottom: 200px;
-      padding-top: 200px;        
- } 
- 
- .hero {
-
-      /* background-image: url(../images/hero.jpg); */
-      background-position: center;
-      background-size: cover;    
-     
-
- }
- .hero{
+      padding-top: 200px;  
       max-width: 1600px;
       max-height: 600px;
       margin-left: auto;
-      margin-right: auto;           
-      background-image: linear-gradient(to left rgba(0, 0, 0, 0,25)),
-      
-       url(../images/hero.jpg); 
-      /* background-color: var(--hero-footer-background); */
-      
-
+      margin-right: auto;
+       background: linear-gradient( rgba(47, 48, 58, 0.4)),;
+      background-image:  url(../images/hero.jpg);
+              
+       background-color: var(--hero-footer-background); 
+     
  }
- 
          
  .hero .title{  
       font-weight: 900;
@@ -322,8 +316,7 @@
       justify-content: center;
      
  }
- .icons-list li{
-      
+ .icons-list li{      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -332,62 +325,125 @@
       height: 44px;   
       border-radius: 50%;
  }
+ .icons-list li:hover,
+ .icons-list li:focus{
+    fill: var(--white-color);
+ 
+    background-color:var(--color-button-logo) ;  
+ }
+ .social{
+      fill: var(--company-social-color);    
+     
+      width: 20px;
+      height: 20px;}
+
+ /* Постоянные клиенты */
+ .client{
+      padding-top: 94px;
+      padding-bottom: 94px;
+ }
+
+ 
+ .client-list{
+      display: flex;
+      justify-content: space-between;
+ }
+ .company-list{
+      width: 170px;
+      height: 92px;
+      border: 1px solid #AFB1B8;
+ }
+ .company{
+      width: 106px;
+      height: 60px;
+      align-items: center;
+      margin: 16px 32px;
+     
+ }
+
+ .company-list:not(:last-child){
+      margin-right: 30px;
+ }
  
       
 
       /* Контакты footer class="footer"*/
        
- .footer {            
-      background: var(--hero-footer-background);  
-      
-       
- }
-
- .footer .conteiner{
-      
+ .footer .conteiner{ 
+      display: flex;  
       padding-top: 60px;
-      padding-bottom: 60px;
-      
-      
+      padding-bottom: 60px;        
+ }
+ .footer{
+     background: var(--hero-footer-background); 
+ }
+  .footer-nav{
+      display: flex;
+     justify-content: center;
+      width: 231px; 
+      margin-right: 70px;
+ } 
+   .footer-join{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer-social li{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 44px;
+      height: 44px;   
+     border-radius: 50%;  
+ }
+ .footer-social li:hover,
+ .footer-social li:focus{
+      fill: var(--white-color);
+      background-color: var(--color-button-logo);
  }
 
- .footer .logo{
-      display: inline-block;     
+ .title-join{
+      text-transform: uppercase;
       color: var(--white-color);
-      
-      margin-bottom: 20px;      
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.142;             
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+ }
+ 
+ .footer .logo{
+   color: var(--white-color);      
   }  
-
  .footer .mail{
-      display: inline-block;
-      
-      font-weight: normal;
+     font-weight: normal;
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
       color:  var(--footer-phone-mail);
-      margin-top: 9px;
+      
  }
-
  .footer .phone{
-      display: inline-block;      
       font-weight: normal;
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
-      color:  var(--footer-phone-mail);
-      margin-top: 9px;
-      
+      color:  var(--footer-phone-mail);       
+ }  
+ .address{
+      margin-top: 20px;
  }
-
-  .contacts {  
+ .contacts {  
       font-weight: normal;
       font-size: 14px;
       line-height: 1.714;     
       letter-spacing: 0.03em; 
       color: var(--white-color);       
  }
-
+ .footer-contacts li{
+ margin-top: 9px;
+ }
  .footer .link:hover,
  .footer .link:focus{
       color: var(--color-button-logo);
@@ -411,16 +467,12 @@
       border: none;
       border-radius: 4px;   
   }
-
   .btn:hover, 
   .btn:focus{
      background: var(--color-button-logo);
      color: var(--white-color);
      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-     
-
  } 
-
   .filter{
       margin-bottom: 50px; 
   }
@@ -430,12 +482,10 @@
        padding-top: 94px;
        padding-bottom: 94px;
   }
-
   .portfolio .filter {
        display: flex;
        justify-content: center;                       
   }
-
   .project {
        padding: 0;
        margin: 0;
@@ -446,19 +496,17 @@
        /* outline: 1px solid rgb(71, 255, 117);  */
  } 
 
- /*.project */ .projekt-choice{
+ .projekt-choice{
        flex-basis: calc((100% - 90px) / 3);
       margin-left: 30px;
       margin-top: 30px;
        /* outline: 1px solid blue;  */
  }
-
 .card-content{
       padding: 20px 24px;
       background-color: var(--white-color);
      border: 1px solid var(--card-content-border);  
 }
-
  .portfolio-item{
       font-weight: bold;
       font-size: 18px;
@@ -466,7 +514,6 @@
       letter-spacing: 0.06em;
       color: var(--main-color-headers);
  }
-
  .portfolio-text{
       font-weight: normal;
       font-size: 16px;
@@ -474,49 +521,32 @@
       letter-spacing: 0.03em;
       color: var(--main-text-color);
       margin-top: 4px;
-
  }
  
-.social{
-   fill: var(--company-social-color);
-   width: 20px;
-   height: 20px;
-   
-}
-
  .icon-mail{
-  fill:  var(--main-text-color);
+  /* fill:  var(--main-text-color); */
+  fill: currentColor;
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-
-    
-    
+    margin-right: 10px;    
 }
+         
 
- .icons-list li:hover,
- .icons-list li:focus{
-    fill: var(--white-color);
-    background-color:var(--color-button-logo) ;           
-}
-
-
-.connect:hover,
-.connect:focus{
+ .connect:hover,
+ .connect:focus{
      Fill: var(--color-button-logo) ;      
 }
 .company{
      fill: var(--company-social-color);
 }
-
-.company:hover,
-.company:focus{
+ .company:hover,
+ .company:focus{
      fill: var(--color-button-logo);
-}
+ }
  .icon-phone {
      width: 10px;
      height: 16px;  
-     fill:  var(--main-text-color);
+     /* fill:  var(--main-text-color); */
+     fill: currentColor;
      margin-right: 10px;
-    
-}
+ }
