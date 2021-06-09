@@ -322,8 +322,27 @@
       margin-top: 16px;
       margin-bottom: 30px;
       display: flex;
-      justify-content: center;
-     
+      justify-content: center;   
+ }
+ .icons-list .icons-card{      
+     display: flex;
+     justify-content: center;
+     align-items: center;    
+}   
+ .icons-ref{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center; 
+     background-color: inherit;
+     fill: var(--company-social-color);   
+     width: 44px;
+     height: 44px;   
+     border-radius: 50%;
+ }
+ .icons-ref:hover,
+ .icons-ref:focus{
+     fill: #FFFFFF;
+      background-color:var(--color-button-logo) ;  
  }
   
 
@@ -336,7 +355,8 @@
       display: flex;
       justify-content: space-between;
  }
- .company-list{
+ .client-company{
+      display: flex;
       width: 170px;
       height: 92px;
       border: 1px solid #AFB1B8;
@@ -345,7 +365,8 @@
       width: 106px;
       height: 60px;
       align-items: center;
-      margin: 16px 32px;    
+      margin: 16px 32px;
+      border: none;    
  }
  .company{
      fill: var(--company-social-color);
@@ -353,17 +374,15 @@
  .company:hover,
  .company:focus{
      fill: var(--color-button-logo);
-     /* width: 170px;
-      height: 92px;
-      border: 1px solid var(--color-button-logo); */
-    
+ }
+ .client-company:hover,
+ .client-company:focus{
+      border: 1px solid var(--color-button-logo);
  }
  .company-list:not(:last-child){
       margin-right: 30px;
  }
- 
-      
-
+       
       /* Контакты footer class="footer"*/
        
  .footer .conteiner{ 
@@ -382,11 +401,8 @@
  } 
    .footer-join{
      display: flex;
-    justify-content: center;
-   
- }
- 
-
+    justify-content: center;   
+ } 
  .title-join{
       text-transform: uppercase;
       color: var(--white-color);
@@ -395,18 +411,45 @@
       line-height: 1.142;             
       letter-spacing: 0.03em;
       margin-bottom: 20px;
+ } 
+ .social{     
+     width: 20px;
+     height: 20px; 
+}
+ .footer-social .list-social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
  }
- 
+
+.social-svg:hover,
+.social-svg:focus{
+     fill: var(--white-color);
+     background-color:var(--color-button-logo) ;  
+} 
+.list-social:not(:last-child){
+     margin-right: 10px;
+}
+
+.social-svg{
+      display: inline-flex;
+     justify-content: center;
+     align-items: center; 
+     background-color: rgba(255, 255, 255, 0.1);
+     fill: var(--company-social-color);   
+     width: 44px;
+     height: 44px;   
+    border-radius: 50%; 
+}  
  .footer .logo{
    color: var(--white-color);      
-  }  
+ }  
  .footer .mail{
      font-weight: normal;
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
-      color:  var(--footer-phone-mail);
-      
+      color:  var(--footer-phone-mail);     
  }
  .footer .phone{
       font-weight: normal;
@@ -506,49 +549,5 @@
       color: var(--main-text-color);
       margin-top: 4px;
  }  
- .icons-list .icons-card{      
-     display: flex;
-     justify-content: center;
-     align-items: center;    
-}   
- .icons-ref{
-     display: inline-flex;
-     justify-content: center;
-     align-items: center; 
-     background-color: inherit;
-     fill: var(--company-social-color);   
-     width: 44px;
-     height: 44px;   
-     border-radius: 50%;
- }
- .icons-ref:hover,
- .icons-ref:focus{
-    fill: #FFFFFF;
-           background-color:var(--color-button-logo) ;  
- }
- .social{     
-      width: 20px;
-      height: 20px; 
-}
-  .footer-social .list-social{
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-  }
-
- .social-svg:hover,
- .social-svg:focus{
-      fill: #FFFFFF;
-      background-color:var(--color-button-logo) ;  
- }    
-
- .social-svg{
-       display: inline-flex;
-      justify-content: center;
-      align-items: center; 
-      background-color: rgba(255, 255, 255, 0.1);
-      fill: var(--company-social-color);   
-      width: 44px;
-      height: 44px;   
-     border-radius: 50%; 
- }  
+ 
+ 
