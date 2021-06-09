@@ -90,6 +90,9 @@
  .sait-link li:not(:last-child){
       margin-right: 50px;
  }
+ .active {
+     color: var(--color-button-logo);
+}
 
  .sait-contacts{
       display: flex; 
@@ -122,21 +125,28 @@
       letter-spacing: 0.02em; 
       color: var(--main-text-color);      
  }
-
- .active {
-      color: var(--color-button-logo);
+ .icon-mail{
+     fill: currentColor;
+     width: 16px;
+     height: 12px;
+     margin-right: 10px;    
+ }     
+ .icon-phone {
+      width: 10px;
+      height: 16px; 
+      fill: currentColor;
+      margin-right: 10px;
  }
- 
- 
- 
-
+ .connect:hover,
+ .connect:focus{
+    Fill: var(--color-button-logo) ;      
+ }
+  
  .link:hover, 
  .link:focus{
      color: var(--color-button-logo);
  } 
- 
- 
-
+  
  /* Logo */ 
  .logo{
       font-family: Raleway;
@@ -156,7 +166,7 @@
  /* Hero section class="hero"*/
       
   .hero{
-       background-position: center;
+       /* background-position: center; */
       background-size: cover;     
       padding-bottom: 200px;
       padding-top: 200px;  
@@ -315,34 +325,13 @@
       justify-content: center;
      
  }
- .icons-list li{      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: inherit;
-      width: 44px;
-      height: 44px;   
-      border-radius: 50%;
- }
- .icons-list li:hover,
- .icons-list li:focus{
-    fill: var(--white-color);
- 
-    background-color:var(--color-button-logo) ;  
- }
- .social{
-      fill: var(--company-social-color);    
-     
-      width: 20px;
-      height: 20px;}
+  
 
  /* Постоянные клиенты */
  .client{
       padding-top: 94px;
       padding-bottom: 94px;
- }
-
- 
+ } 
  .client-list{
       display: flex;
       justify-content: space-between;
@@ -356,10 +345,15 @@
       width: 106px;
       height: 60px;
       align-items: center;
-      margin: 16px 32px;
-     
+      margin: 16px 32px;    
  }
-
+ .company{
+     fill: var(--company-social-color);
+ }
+ .company:hover,
+ .company:focus{
+     fill: var(--color-button-logo);
+ }
  .company-list:not(:last-child){
       margin-right: 30px;
  }
@@ -387,20 +381,7 @@
     justify-content: center;
    
  }
- .footer-social li{
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.1);
-      width: 44px;
-      height: 44px;   
-     border-radius: 50%;  
- }
- .footer-social li:hover,
- .footer-social li:focus{
-      fill: var(--white-color);
-      background-color: var(--color-button-logo);
- }
+ 
 
  .title-join{
       text-transform: uppercase;
@@ -520,32 +501,64 @@
       letter-spacing: 0.03em;
       color: var(--main-text-color);
       margin-top: 4px;
- }
- 
- .icon-mail{
-  /* fill:  var(--main-text-color); */
-  fill: currentColor;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;    
+ }  
+ .icons-list .icons-card{      
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: inherit;
+     width: 44px;
+     height: 44px;   
+     border-radius: 50%;
 }
-         
+  .icons-list .icons-card:hover,
+  .icons-list .icons-card:focus{
+   fill: var(--white-color);
+    background-color:var(--color-button-logo) ;  
+ }  
+ .social{
+     fill: var(--company-social-color);     
+      width: 20px;
+     height: 20px; 
+}
 
- .connect:hover,
- .connect:focus{
-     Fill: var(--color-button-logo) ;      
-}
-.company{
-     fill: var(--company-social-color);
-}
- .company:hover,
- .company:focus{
-     fill: var(--color-button-logo);
- }
- .icon-phone {
-     width: 10px;
-     height: 16px;  
-     /* fill:  var(--main-text-color); */
-     fill: currentColor;
-     margin-right: 10px;
- }
+
+  .footer-social li{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+     width: 44px;
+     height: 44px;   
+    border-radius: 50%;   
+} 
+ .footer-social li:hover,
+ .footer-social li:focus{
+     fill: var(--white-color);
+     background-color: var(--color-button-logo);
+}      
+ 
+      
+
+     /* .list-social .social-svg:hover,
+     .list-social .social-svg:focus{
+          fill: var(--white-color);
+         background-color:var(--color-button-logo) ;  
+     } */
+     
+
+       /* .list-social .social-svg{
+           display: inline-flex;
+          justify-content: center;
+          align-items: center; 
+          background-color: rgba(255, 255, 255, 0.1);
+          width: 44px;
+          height: 44px;   
+         border-radius: 50%;  
+      }  */
+
+         .social-svg:hover,
+       .social-svg:focus{
+           fill: #FFFFFF;
+           background-color:var(--color-button-logo) ;  
+      }   
