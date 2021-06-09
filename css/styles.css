@@ -353,6 +353,10 @@
  .company:hover,
  .company:focus{
      fill: var(--color-button-logo);
+     /* width: 170px;
+      height: 92px;
+      border: 1px solid var(--color-button-logo); */
+    
  }
  .company-list:not(:last-child){
       margin-right: 30px;
@@ -505,60 +509,46 @@
  .icons-list .icons-card{      
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: center;    
+}   
+ .icons-ref{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center; 
      background-color: inherit;
+     fill: var(--company-social-color);   
      width: 44px;
      height: 44px;   
      border-radius: 50%;
-}
-  .icons-list .icons-card:hover,
-  .icons-list .icons-card:focus{
-   fill: var(--white-color);
-    background-color:var(--color-button-logo) ;  
- }  
- .social{
-     fill: var(--company-social-color);     
+ }
+ .icons-ref:hover,
+ .icons-ref:focus{
+    fill: #FFFFFF;
+           background-color:var(--color-button-logo) ;  
+ }
+ .social{     
       width: 20px;
-     height: 20px; 
+      height: 20px; 
 }
-
-
-  .footer-social li{
+  .footer-social .list-social{
      display: inline-flex;
      justify-content: center;
      align-items: center;
+  }
+
+ .social-svg:hover,
+ .social-svg:focus{
+      fill: #FFFFFF;
+      background-color:var(--color-button-logo) ;  
+ }    
+
+ .social-svg{
+       display: inline-flex;
+      justify-content: center;
+      align-items: center; 
       background-color: rgba(255, 255, 255, 0.1);
-     width: 44px;
-     height: 44px;   
-    border-radius: 50%;   
-} 
- .footer-social li:hover,
- .footer-social li:focus{
-     fill: var(--white-color);
-     background-color: var(--color-button-logo);
-}      
- 
-      
-
-     /* .list-social .social-svg:hover,
-     .list-social .social-svg:focus{
-          fill: var(--white-color);
-         background-color:var(--color-button-logo) ;  
-     } */
-     
-
-       /* .list-social .social-svg{
-           display: inline-flex;
-          justify-content: center;
-          align-items: center; 
-          background-color: rgba(255, 255, 255, 0.1);
-          width: 44px;
-          height: 44px;   
-         border-radius: 50%;  
-      }  */
-
-         .social-svg:hover,
-       .social-svg:focus{
-           fill: #FFFFFF;
-           background-color:var(--color-button-logo) ;  
-      }   
+      fill: var(--company-social-color);   
+      width: 44px;
+      height: 44px;   
+     border-radius: 50%; 
+ }  
