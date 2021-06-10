@@ -288,6 +288,9 @@
       color: var(--main-color-headers);
       margin-bottom: 50px;
  } 
+ .team-conteiner{
+      padding: 30px 32px;
+ }
 
   .team .scorecard{
      background: var(--white-color);             
