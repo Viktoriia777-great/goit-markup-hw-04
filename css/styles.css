@@ -95,10 +95,10 @@
 }
 
  .sait-contacts{
-      display: flex; 
-      align-items: center;
-      justify-content: space-between;       
-      width: 333px;  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;     
+       width: 333px;   
        margin-left: 305px; 
       padding-top: 32px;
       padding-bottom: 32px;
@@ -111,9 +111,10 @@
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 1.143;
+      line-height: 1.142;
       letter-spacing: 0.02em; 
-      color: var(--main-text-color);            
+      color: var(--main-text-color);  
+      width: 135px;         
  }
 
  .sait-contacts .phone{
@@ -121,9 +122,10 @@
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 1.143;
+      line-height: 1.142;
       letter-spacing: 0.02em; 
-      color: var(--main-text-color);      
+      color: var(--main-text-color);  
+      width: 122px;    
  }
  .icon-mail{
      fill: currentColor;
@@ -240,7 +242,8 @@
       text-transform: uppercase;
       color: var(--main-color-headers);
       margin-bottom: 10px;
-      text-align: center;
+      margin-top: 30px;
+      
  }
 
  .feature-text{
@@ -249,7 +252,7 @@
       font-size: 14px;
       line-height: 1.714; 
       letter-spacing: 0.03em; 
-      text-align: justify; 
+      
  }
 
       /* Чем занимаемся */
@@ -291,6 +294,9 @@
  .team-conteiner{
       padding: 30px 32px;
  }
+ .icons-card:not(:last-child){
+     margin-right: 10px;
+}
 
   .team .scorecard{
      background: var(--white-color);             
@@ -439,7 +445,7 @@
      justify-content: center;
      align-items: center; 
      background-color: rgba(255, 255, 255, 0.1);
-     fill: var(--company-social-color);   
+     fill: var(--white-color);   
      width: 44px;
      height: 44px;   
     border-radius: 50%; 
