@@ -65,16 +65,9 @@
    .sait-nav {  
       display: flex;
        align-items: center; 
-      /* justify-content: space-between;            */
-             
- }
-
- /* .sait-nav:not(:last-child){
-      padding-right: 50px;
- }
-  */
- 
- 
+                           
+ } 
+  
  header{
      border-bottom: 1px solid #ECECEC;
  }
@@ -168,7 +161,7 @@
  /* Hero section class="hero"*/
       
   .hero{
-       /* background-position: center; */
+       
       background-size: cover;     
       padding-bottom: 200px;
       padding-top: 200px;  
@@ -303,12 +296,6 @@
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 0px 0px 4px 4px;     
  }
-
- .list-item .team-scorecard{
-      margin-top: 30px;
-      margin-bottom: 30px;
- }
-
  .team-member{
       font-weight: 500;
       font-size: 16px;
@@ -327,21 +314,20 @@
       margin-top: 10px;    
  }
  .icons-list{
-      margin: 0 auto;
-      margin-top: 16px;      
+      
+       margin-top: 16px;       
       display: flex;
       justify-content: center;   
  }
- .icons-list .icons-card{      
+   .icons-card{      
      display: flex;
      justify-content: center;
-     align-items: center;    
+     align-items: center;     
 }   
  .icons-ref{
-     display: inline-flex;
+      display: inline-flex;
      justify-content: center;
-     align-items: center; 
-     background-color: inherit;
+     align-items: center;      
      fill: var(--company-social-color);   
      width: 44px;
      height: 44px;   
@@ -349,7 +335,7 @@
  }
  .icons-ref:hover,
  .icons-ref:focus{
-     fill: #FFFFFF;
+     fill: var(--white-color);
       background-color:var(--color-button-logo) ;  
  }
   
@@ -375,7 +361,7 @@
  .client-company:hover,
  .client-company:focus{
      fill: var(--color-button-logo);
-     outline: 1px solid var(--color-button-logo);
+     border: 1px solid var(--color-button-logo);
  }
  .client-company{
        display: flex;
@@ -384,7 +370,7 @@
       fill: var(--company-social-color);
       width: 170px;
       height: 92px;
-      outline: 1px solid #AFB1B8;
+      border: 1px solid #AFB1B8;
  }
  
    .company-list:not(:last-child){
